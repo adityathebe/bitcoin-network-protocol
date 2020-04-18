@@ -23,6 +23,10 @@ def make_ping_msg():
     return make_message('ping', payload)
 
 
+def make_tx_msg(signed_transaction):
+    return make_message('tx', signed_transaction)
+
+
 def make_version_msg():
     version = 70015
     services = 1
