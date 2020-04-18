@@ -36,7 +36,7 @@ def make_version_msg():
     nonce = random.randint(0, 10000000)
     user_agent = 0x00
     start_height = 0
-    relay = 0
+    relay = 1
 
     payload = struct.pack('<LQQQ26s26sbL?', version, services, timestamp,
                           nonce, addr_recv, addr_from, user_agent, start_height, relay)
